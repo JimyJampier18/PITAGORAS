@@ -1,0 +1,379 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #333;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Contenedor general */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Encabezado */
+  header {
+    background-color: #3498db;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  header .logo h1 {
+    margin-left: 20px;
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Sección Hero */
+  .hero-section {
+    background: linear-gradient(to right, #3498db, #8e44ad);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .hero-section h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .hero-section p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+  }
+  
+  .hero-section .cta-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-section .cta-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Sección Nosotros */
+  .about-section {
+    background-color: #ffffff;
+    padding: 60px 0;
+  }
+  
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .about-text {
+    flex: 1;
+    padding: 20px;
+    font-size: 1.1em;
+  }
+  
+  .about-text h2 {
+    font-size: 2em;
+    color: #3498db;
+    margin-bottom: 20px;
+  }
+  
+  .about-text p {
+    line-height: 1.7;
+  }
+  
+  .about-image {
+    flex: 1;
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Sección Servicios */
+  .services-section {
+    padding: 60px 0;
+    background-color: #ecf0f1;
+  }
+  
+  .services-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #3498db;
+  }
+  
+  .services-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .service-item {
+    background: #ffffff;
+    padding: 30px;
+    margin: 20px 0;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #3498db;
+  }
+  
+  .service-item p {
+    font-size: 1.1em;
+    color: #555;
+  }
+  
+  /* Sección Cursos */
+  .courses-section {
+    padding: 60px 0;
+    background-color: #ffffff;
+  }
+  
+  .courses-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #3498db;
+  }
+  
+  .courses-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .course-item {
+    background: #ecf0f1;
+    padding: 25px;
+    margin: 20px 0;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .course-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #3498db;
+  }
+  
+  .course-item p {
+    font-size: 1.1em;
+    color: #555;
+  }
+  
+  .course-item a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #3498db;
+    font-size: 1.1em;
+    text-decoration: none;
+  }
+  
+  .course-item a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Sección Testimonios */
+  .testimonials-section {
+    padding: 60px 0;
+    background-color: #ecf0f1;
+  }
+  
+  .testimonials-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #3498db;
+  }
+  
+  .testimonial-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  blockquote {
+    font-style: italic;
+    background-color: #ffffff;
+    padding: 30px;
+    border-left: 10px solid #3498db;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  blockquote footer {
+    text-align: right;
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  /* Sección Contacto */
+  .contact-section {
+    padding: 60px 0;
+    background-color: #ffffff;
+  }
+  
+  .contact-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #3498db;
+  }
+  
+  .contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .contact-section form input,
+  .contact-section form textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.1em;
+  }
+  
+  .contact-section form button {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-section form button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Pie de Página */
+  footer {
+    background-color: #3498db;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    margin-bottom: 10px;
+  }
+  
+  footer .footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  footer .footer-links li {
+    margin-left: 20px;
+  }
+  
+  footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  footer .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    /* Ajustes en el layout */
+    .about-content {
+      flex-direction: column;
+    }
+  
+    .about-text, .about-image {
+      flex: 1 1 100%;
+      text-align: center;
+    }
+  
+    .services-list, .courses-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service-item, .course-item {
+      width: 80%;
+      margin: 10px 0;
+    }
+  
+    .hero-section h2 {
+      font-size: 2em;
+    }
+  
+    .cta-btn {
+      font-size: 1.1em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+   
+  }
